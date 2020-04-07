@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins',sans-serif;
+	color:#222;
+}
+.navbar{
+	padding: .8rem;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-size: 1.1em !important;
+}
+
+
+/*-----Firefox bug fix-----*/   
+/* This fix is for the image slider */
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+
+.padding{
+	padding-bottom: 2rem;
+}
+
+footer{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+}
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+}
+
+
+/*-----Bootstrap padding fix-----*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+
+
+
+
+
+
+/*The below comment tells us about all the breakpoints in bootstrap*/
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
